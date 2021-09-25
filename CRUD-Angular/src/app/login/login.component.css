@@ -1,0 +1,24 @@
+.navTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: beige;
+}
+
+.linkSair {
+  padding: 8px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.navTop p {
+  margin-top: 4px;
+}
+
+.ativo {
+  display: none;
+}
+
+form {
+  width: 25em;
+}

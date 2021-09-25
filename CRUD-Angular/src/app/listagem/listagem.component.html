@@ -1,1 +1,33 @@
-<p>listagem works!</p>
+<nav class="navbar sticky-top navbar-light bg-light">
+  <div class="container-fluid navTop">
+    <p style="font-size: 17px">Crud-Angular</p>
+    <a class="navbar-brand linkSair" style="font-size: 14px" href="#">Sair</a>
+  </div>
+</nav>
+
+<div class="container">
+  <div>
+    <button
+      type="button"
+      class="btn btn-primary mb-3"
+      (click)="LogarCadastro()"
+    >
+      + Adicionar Conteúdo
+    </button>
+    <div class="container formulario" *ngFor="let list of listagens">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">{{ list.titulo }}</h5>
+              <p class="card-text">{{ list.descricao }}</p>
+            </div>
+            <div class="card-footer">
+              {{ list.data }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

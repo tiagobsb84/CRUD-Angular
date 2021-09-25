@@ -1,1 +1,37 @@
-<p>cadastro works!</p>
+<nav class="navbar sticky-top navbar-light bg-light">
+  <div class="container-fluid navTop">
+    <p style="font-size: 17px">Crud-Angular</p>
+    <a class="navbar-brand linkSair" style="font-size: 14px" href="#">Sair</a>
+  </div>
+</nav>
+<div class="container">
+  <div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Título</label>
+      <input
+        type="email"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="name@example.com"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label"
+        >Descrição</label
+      >
+      <textarea
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        rows="3"
+      ></textarea>
+    </div>
+    <button
+      type="button"
+      class="btn btn-secundary btn-lg"
+      (click)="cancelarCadastro()"
+    >
+      Cancelar
+    </button>
+    <button type="button" class="btn btn-success btn-lg">Salvar</button>
+  </div>
+</div>

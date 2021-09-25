@@ -1,1 +1,41 @@
-<p>login works!</p>
+<nav class="navbar sticky-top navbar-light bg-light">
+  <div class="container-fluid navTop">
+    <p style="font-size: 17px">Crud-Angular</p>
+    <a
+      class="navbar-brand linkSair"
+      style="font-size: 14px"
+      routerLink="/"
+      routerLinkActive="ativo"
+      >Sair</a
+    >
+  </div>
+</nav>
+<div class="container">
+  <div>
+    <div>
+      <h2>CRUD-ANGULAR</h2>
+    </div>
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="Logar()">
+        Acessar
+      </button>
+    </form>
+  </div>
+</div>
